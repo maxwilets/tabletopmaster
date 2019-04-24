@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const ExpenseSchema = new Schema({
+const SheetSchema = new Schema({
+    gameId:{
+        type: String
+    },
     strength:{
         type: Number,
         required: true
@@ -53,8 +56,20 @@ const ExpenseSchema = new Schema({
     proficency: {
         type: Number,
         default: 0
+    },
+    aClass: {
+        type: Number
+    },
+    inititave: {
+        type: Number,
+        default: 0
+    },
+    speed: {
+        type: Number,
+        default: 0
     }
+
 });
 
-const Expense = mongoose.model('Expense', ExpenseSchema);
-module.exports = Expense
+const Sheet = mongoose.model('Sheet', SheetSchema);
+module.exports = Sheet;
