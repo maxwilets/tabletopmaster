@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Leftsheet from './components/leftsheet';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Leftsheet/>
         </a>
       </header>
     </div>

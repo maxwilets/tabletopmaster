@@ -17,6 +17,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="strength"
                         value={this.state.strength}
+                        size="2"
                         onChange={this.handleChange}
                         />
                     <label htmlFor="dex">DEXTERITY</label>
@@ -24,6 +25,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="dex"
                         value={this.state.dex}
+                        size="2"
                         onChange={this.handleChange}
                     />
                     <label htmlFor="const">CONSTITUTION</label>
@@ -31,6 +33,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="const"
                         value={this.state.const}
+                        size="2"
                         onChange={this.handleChange}
                     />
                     <label htmlFor="int">INTELLIGENCE</label>
@@ -38,6 +41,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="int"
                         value={this.state.int}
+                        size="2"
                         onChange={this.handleChange}
                     />
                     <label htmlFor="wis">WISDOM</label>
@@ -45,6 +49,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="wis"
                         value={this.state.wis}
+                        size="2"
                         onChange={this.handleChange}
                     />
                     <label htmlFor="char">CHARISMA</label>
@@ -52,6 +57,7 @@ class Leftsheet extends Component {
                         type="text"
                         name="char"
                         value={this.state.char}
+                        size="2"
                         onChange={this.handleChange}
                     />
             </form>
