@@ -1,8 +1,10 @@
 const axios = require('axios');
 
 const formCall = {
-    saving: {
-
+    saving: (id)=>{
+        axios.get()
     }
-}
+        
+    
+};
 module.export = formCall;
