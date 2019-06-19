@@ -1,8 +1,12 @@
 const axios = require('axios');
 
 const formCall = {
-    saving: (id)=>{
-        axios.get()
+    saving: (id, method)=>{
+        axios({
+            method:"GET",
+            url:"/getid",
+            method: method
+        }).then(data=>data.saving)
     }
         
     
