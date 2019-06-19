@@ -5,8 +5,14 @@ const formCall = {
         axios({
             method:"GET",
             url:"/getid",
-            method: method
+            type: method
         }).then(data=>data.saving)
+    },
+    health: (id)=>{
+        axios({
+            method:"GET",
+            url:"/gethealth",
+        }).then(data=>data.health)
     }
         
     
