@@ -10,6 +10,7 @@ export default class NewCharacter extends Component {
                     <div className="row">
                         <div className="col-3">
                             <Leftsheet/>
+                        
                         </div>
                     </div>
                 </div>
