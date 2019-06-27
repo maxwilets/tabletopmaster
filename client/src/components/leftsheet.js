@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row'
 import Container from "react-bootstrap/Container"
 
 
@@ -15,11 +15,17 @@ class Leftsheet extends Component {
             char: ""
         }
     }
+  
+    handleChange(event){
+        this.setState({
+          [event.target.name]: event.target.value
+        })
+      }
   render() {
     return (
       <Container>
         <Row>
-            <Col lg="4" md="4">
+            <Col lg="4" md="4" >
             <form id="statsForm">
                 <label htmlFor="strength">STRENGTH</label>
                     <input
@@ -72,7 +78,7 @@ class Leftsheet extends Component {
             </form>
               
            </Col>
-           <Col lg="4" md="4">
+           <Col lg={4} md={4}>
            <form id="statsForm">
                 <label htmlFor="strength">STRENGTH</label>
                     <input

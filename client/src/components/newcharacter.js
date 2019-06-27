@@ -8,10 +8,7 @@ export default class NewCharacter extends Component {
                 <h3>New Charactersheet</h3>
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
-                            <Leftsheet/>
-                        
-                        </div>
+                        <Leftsheet/>
                     </div>
                 </div>
             </div>
