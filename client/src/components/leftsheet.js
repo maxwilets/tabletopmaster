@@ -32,6 +32,8 @@ class Leftsheet extends Component {
             stealth: false,
             survive: false
         }
+        this.handleChange= this.handleChange.bind(this);
+        this.handleBox = this.handleBox.bind(this);
     }
   
     handleChange(event){
