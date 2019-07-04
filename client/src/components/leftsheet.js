@@ -21,6 +21,19 @@ class Leftsheet extends Component {
           [event.target.name]: event.target.value
         })
       }
+    handleBox(event){
+        if(!event.target.name){
+        this.setState({
+            [event.target.name]: true
+        })
+        
+    }
+    else{
+        this.setState({
+            [event.target.name]: false
+        })
+    }
+    }
   render() {
     return (
       <Container>
@@ -79,14 +92,12 @@ class Leftsheet extends Component {
               
            </Col>
            <Col lg={2} md={4}>
-           <form id="statsForm">
+           <form id="skills">
                 <label htmlFor="strength">STRENGTH</label>
                     <input
-                        type="text"
-                        name="strength"
-                        value={this.state.strength}
-                        size="2"
-                        onChange={this.handleChange}
+                        type="checkbox"
+                        name="Acrobatics"
+                        onChange={this.handleBox}
                         />
                     <label htmlFor="dex">DEXTERITY</label>
                     <input
