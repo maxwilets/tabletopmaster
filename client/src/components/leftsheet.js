@@ -12,7 +12,25 @@ class Leftsheet extends Component {
             dex:"",
             const:"",
             int: "",
-            char: ""
+            char: "",
+            acrobatics: false,
+            animal: false,
+            arcana: false,
+            athletic: false,
+            decpt: false,
+            hist: false,
+            insight: false,
+            intimid: false,
+            invest: false,
+            med: false,
+            nature: false,
+            percept: false,
+            perform: false,
+            persuade: false,
+            religion: false,
+            sleight: false,
+            stealth: false,
+            survive: false
         }
     }
   
@@ -22,7 +40,7 @@ class Leftsheet extends Component {
         })
       }
     handleBox(event){
-        if(!event.target.name){
+        if(event.target.name === false){
         this.setState({
             [event.target.name]: true
         })
@@ -163,6 +181,42 @@ class Leftsheet extends Component {
                     <input
                         type="checkbox"
                         name="percept"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="perform">performance</label>
+                    <input
+                        type="checkbox"
+                        name="perform"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="persuade">Persuasion</label>
+                    <input
+                        type="checkbox"
+                        name="persuade"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="religion">Religion</label>
+                    <input
+                        type="checkbox"
+                        name="religion"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="sleight">Sleight of Hand</label>
+                    <input
+                        type="checkbox"
+                        name="sleight"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="stealth">stealth</label>
+                    <input
+                        type="checkbox"
+                        name="stealth"
+                        onChange={this.handleChange}
+                    />
+                    <label htmlFor="survive">Survival</label>
+                    <input
+                        type="checkbox"
+                        name="survive"
                         onChange={this.handleChange}
                     />                                    
             </form>
