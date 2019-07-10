@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 
 export default class LeftTest extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            strength:"",
+            dex:"",
+            const:"",
+            int: "",
+            char: ""
+        }
+        this.handleChange= this.handleChange.bind(this);
+    };
+    handleChange(event){
+        this.setState({
+          [event.target.name]: event.target.value
+        })
+      }
     render() {
         return (
             <div>
